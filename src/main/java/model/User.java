@@ -25,13 +25,13 @@ public class User implements Serializable {
     private String usr;
     private String pwd;
 
+    public User() {
+    }
+
     public User(UUID id, String usr, String pwd) {
         this.id = id;
         this.usr = usr;
         this.pwd = pwd;
-    }
-
-    public User() {
     }
 
     public UUID getId() {

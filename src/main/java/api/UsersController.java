@@ -5,14 +5,18 @@
  */
 package api;
 
+import dao.FakeUserDataAccessService;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import model.User;
+import org.graalvm.compiler.lir.CompositeValue;
+import org.graalvm.compiler.lir.LIRInstruction;
 import service.UserService;
 
 /**
@@ -29,7 +33,8 @@ import service.UserService;
  * @Produces -> Ovvero che risponde con un file in formato.JSON
  * @Consumes -> Ovvero che richiede un file in formato.JSON
  */
-@Path("/test")
+@Path("test")
+
 public class UsersController {
 
     @Inject
